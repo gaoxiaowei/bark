@@ -71,7 +71,7 @@ SUPPORTED_LANGS = [
 ALLOWED_PROMPTS = {"announcer"}
 for _, lang in SUPPORTED_LANGS:
     for prefix in ("", f"v2{os.path.sep}"):
-        for n in range(10):
+        for n in range(11):
             ALLOWED_PROMPTS.add(f"{prefix}{lang}_speaker_{n}")
 
 
